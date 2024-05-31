@@ -1,0 +1,33 @@
+Data set URL : "https://www.kaggle.com/datasets/lava18/google-play-store-apps/data"
+
+Syntax DDL :
+
+# Create Database
+CREATE DATABASE milestone3
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LOCALE_PROVIDER = 'libc'
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+# Create table
+CREATE TABLE tabel_m3(
+	app TEXT,
+	category TEXT,
+	rating FLOAT,
+	review TEXT,
+	size TEXT,
+	installs TEXT,
+	type TEXT,
+	price TEXT,
+	content_rating TEXT,
+	genres TEXT,
+	last_updated TEXT,
+	current_version TEXT,
+	android_ver TEXT);
+
+COPY tabel_m3 (app, category, rating, review, size, installs, type, price, content_rating, genres, last_updated, current_version, android_ver)
+FROM '\Users\dwina\hacktiv8_latian\project-m3\dags\P2M3_dendy_dwinanda_data_raw.csv'
+DELIMITER ','
+CSV HEADER;

@@ -1,0 +1,8 @@
+1. NoSQL adalah jenis dbms yang dibuat untuk menghandle storage data volume yang besar dari unstructur dan semi-structured data.
+2. NoSQL digunakan untuk unstructured dan semi-unstructured data. RDBMS digunakan untuk data yang sudah terstructured
+3. Cassandra dan Redis.
+4. Airflow merupakan platform yang dibuat untuk membuat penjadwalan program pada python script.
+5. Great Expectation merupakan tools untuk mengecheck row data yang sedang diolah untuk keperluan standar data yang akan digunakan untuk permodelan atau EDA.
+6. Batch processing adalah processing tugas yang sebelumnya sudah dibuat dalam penjadwalan. 
+Misal, membuat program flect data dari postgres, cleaning data, upload to elastic search. Maka batch processing akan melakukan perintah pertama sebelum masuk ke dalam perintah selanjutnya dan setiap perintah harus berhasil sebelum dilanjutkan kedalam perintah selanjutnya.
+Tools : Airflow, spark.
